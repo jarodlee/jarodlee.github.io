@@ -1,2 +1,2 @@
-# jarodlee.githu.io
+# jarodlee.github.io
 my GitHub projecot
