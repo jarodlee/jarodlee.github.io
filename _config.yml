@@ -122,8 +122,8 @@ menu:
   about: /about/
   archives: /archives/
   tags: /tags/
-  schdule: /calendar/
   sitemap: /sitemap.xml
+  mail: https://mail.aqde.net
   #commonweal: /404.html
 
 
@@ -143,6 +143,7 @@ menu_icons:
   archives: archive
   sitemap: sitemap
   commonweal: heartbeat
+  mail: heartbeat
 
 
 
