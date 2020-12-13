@@ -7,9 +7,41 @@ tags:
 - 软件
 - 必备
 ---
+## 基础软件
 开始一项新的编程工作前，最重要的应该就是检查自己的开发工具是否已经符合工作需求了。
-比如windows电脑中是否安装了[.net框架](https://df.ghtxx.cn:89/externalLinksController/chain/dotnetfx45_full_4.5.51209.exe?ckey=fpVCxkP4uP139i1iK1B88xCXR4x0yzTshlf%2FB7ppu6JVrznRk%2BBQgni1bzS6HLvj)
+比如windows 7电脑中是否安装了[.net框架](https://df.ghtxx.cn:89/externalLinksController/chain/dotnetfx45_full_4.5.51209.exe?ckey=fpVCxkP4uP139i1iK1B88xCXR4x0yzTshlf%2FB7ppu6JVrznRk%2BBQgni1bzS6HLvj)
 
-现代的主流编程工具如果没有.net基本都无法在windows上运行了。比如github的客户端程序。
+现代的主流编程工具如果没有.net基本都无法在windows 7上运行了。比如github的客户端程序。
 
+## 开发工具
 然后就是一些开发工具了，由于个人使用习惯，对当年的MacroMedia软件套装非常热爱，所以我还在使用Dreamweaver MX编写着Markdown文档，虽然有些落伍了，没有现代工具的代码提示功能，但好在软件很小巧，速度也非常快，更重要的是它不用改变我的使用习惯。只是在使用着要做一些小的设置，比如默认的中文文档编码要从当年流行的gb2312改为现代的utf-8，不然的话基本写出来的东西就乱码了，好在github平台非常强大，在同步上去后也会自动在网页编辑时给你转成utf-8，关于这两种编码的问题我就不再转移过来了，毕竟是历史遗留的，感兴趣的同学可以[参考这篇以前的教材](https://i.ghtxx.cn/docs/unicode2gbk.html)
+
+现代的Atom和VScode其实更适合学习编程来使用,两者都是微软提供的免费工具软件,值得一试.
+
+## 我们学些什么呢?
+
+ 5次课程内容提纲，每次1.5小时				
+
+
+### 1课次
+	顺序
+  	阶段1：1－10孙悟空
+    	阶段1：11－20 小画家
+### 2课次
+	基本循环语句01
+  	阶段2：1－5孙悟空
+    	阶段2：6－11小熊猫接红包
+      	阶段2：12－24小画家
+### 3课次
+	基本循环语句02＋事件、游戏设计
+  	阶段2：25－36小熊猫吃竹笋
+    	阶段5：1－20	
+### 4课次
+	条件语句 ＋游戏设计
+  	阶段4：1－12小熊猫吃竹笋	收养小狗汪汪
+### 5课次
+	学习成果创建
+  	老师讲解游戏创作：真假美猴王	设计自己的游戏（可以参考老师给出的IDEA）
+
+###   注：
+[极客晨星的游戏设计创作地址](https://courses.geek-8.com/webapps/courses/trial_adoptdog?level=12)
