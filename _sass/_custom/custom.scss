@@ -443,6 +443,8 @@ input[type="submit"]:hover {
 
 .sidebar {
   padding-top: 0;
+  background: linear-gradient(180deg, rgba(255, 250, 247, 0.98), rgba(244, 249, 255, 0.96));
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.72), -18px 0 40px rgba(15, 23, 42, 0.08);
 }
 
 .sidebar-inner {
@@ -462,6 +464,15 @@ input[type="submit"]:hover {
 .post-toc a,
 .site-state-item a {
   color: var(--ink);
+}
+
+.sidebar a {
+  color: var(--ink);
+  border-bottom-color: rgba(148, 163, 184, 0.2);
+}
+
+.sidebar a:hover {
+  color: var(--accent-strong);
 }
 
 .sidebar-nav .sidebar-nav-active,
