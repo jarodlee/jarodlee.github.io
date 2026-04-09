@@ -490,7 +490,9 @@ input[type="submit"]:hover {
 }
 
 .back-to-top {
+  position: fixed;
   left: 26px;
+  right: auto;
   bottom: 26px;
   width: 48px;
   height: 48px;
@@ -498,6 +500,21 @@ input[type="submit"]:hover {
   border-radius: 50%;
   background: linear-gradient(135deg, #1f2937, #334155);
   box-shadow: 0 14px 30px rgba(15, 23, 42, 0.2);
+}
+
+.sidebar-toggle {
+  right: 26px;
+  bottom: 110px;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(255, 247, 243, 0.94));
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.14);
+}
+
+.sidebar-toggle-line {
+  background: var(--ink-strong);
 }
 
 .footer {
