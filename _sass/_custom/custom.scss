@@ -118,6 +118,149 @@ a:hover {
   margin-top: 18px;
 }
 
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(260px, 0.9fr);
+  gap: 24px;
+  align-items: stretch;
+  margin-bottom: 28px;
+}
+
+.home-hero-copy,
+.home-hero-panel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  border-radius: 30px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 247, 243, 0.88));
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
+}
+
+.home-hero-copy {
+  padding: 34px 36px;
+}
+
+.home-hero-copy:before,
+.home-hero-panel:before {
+  content: "";
+  position: absolute;
+  inset: auto auto -40px -20px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 107, 107, 0.16), transparent 68%);
+  pointer-events: none;
+}
+
+.home-hero-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.home-hero-title {
+  margin: 18px 0 14px;
+  color: var(--ink-strong);
+  font-size: 52px;
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+.home-hero-description {
+  max-width: 640px;
+  margin: 0;
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.home-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 132px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero-btn-primary {
+  background: linear-gradient(135deg, var(--accent), #ff8a5b);
+  box-shadow: 0 14px 28px rgba(255, 107, 107, 0.22);
+  color: #fff;
+}
+
+.hero-btn-primary:hover {
+  color: #fff;
+  box-shadow: 0 18px 34px rgba(255, 107, 107, 0.28);
+}
+
+.hero-btn-secondary {
+  border: 1px solid rgba(46, 196, 182, 0.18);
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--ink-strong);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+}
+
+.hero-btn-secondary:hover {
+  color: var(--ink-strong);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+}
+
+.home-hero-panel {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  padding: 24px;
+  align-content: center;
+}
+
+.hero-stat {
+  position: relative;
+  z-index: 1;
+  padding: 18px 18px 16px;
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.hero-stat-value {
+  display: block;
+  color: var(--ink-strong);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero-stat-label {
+  display: block;
+  margin-top: 6px;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
 .posts-expand .post-block,
 .posts-expand .post,
 .posts-expand .page,
@@ -145,8 +288,20 @@ a:hover {
 }
 
 .posts-expand .post-title {
+  position: relative;
+  margin-bottom: 14px;
   font-weight: 700;
   letter-spacing: -0.02em;
+}
+
+.posts-expand .post-title:after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 4px;
+  margin-top: 16px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), rgba(46, 196, 182, 0.88));
 }
 
 .posts-expand .post-title-link {
@@ -162,7 +317,10 @@ a:hover {
 }
 
 .posts-expand .post-meta {
+  margin-bottom: 20px;
   color: var(--ink-soft);
+  font-size: 13px;
+  letter-spacing: 0.02em;
 }
 
 .post-body {
@@ -178,6 +336,45 @@ a:hover {
 .post-body h5,
 .post-body h6 {
   color: var(--ink-strong);
+}
+
+.post-body h1 {
+  margin-top: 1.7em;
+  margin-bottom: 0.7em;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.post-body h2 {
+  margin-top: 1.6em;
+  margin-bottom: 0.75em;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+  font-size: 28px;
+  line-height: 1.25;
+}
+
+.post-body h3 {
+  margin-top: 1.45em;
+  margin-bottom: 0.65em;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.post-body h4,
+.post-body h5,
+.post-body h6 {
+  margin-top: 1.35em;
+  margin-bottom: 0.6em;
+}
+
+.post-body h3:before,
+.post-body h4:before {
+  display: inline-block;
+  margin-right: 10px;
+  color: var(--secondary);
+  font-weight: 700;
+  content: "//";
 }
 
 .post-body blockquote {
@@ -201,16 +398,31 @@ pre {
 .post-button .btn,
 button,
 input[type="submit"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
   border: none;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--accent), #ff8a5b);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   box-shadow: 0 12px 24px rgba(255, 107, 107, 0.24);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
 }
 
 .post-button .btn:hover,
 button:hover,
 input[type="submit"]:hover {
+  transform: translateY(-2px);
+  color: #fff;
   box-shadow: 0 18px 30px rgba(255, 107, 107, 0.28);
+}
+
+.post-button .btn:after {
+  margin-left: 10px;
+  content: "\2192";
 }
 
 .post-tags a,
@@ -293,6 +505,18 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 991px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero-copy {
+    padding: 28px 24px;
+  }
+
+  .home-hero-title {
+    font-size: 42px;
+  }
+
   .header-inner {
     margin-top: 14px;
     padding: 18px 18px 14px;
@@ -312,6 +536,32 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 767px) {
+  .home-hero {
+    gap: 18px;
+    margin-bottom: 22px;
+  }
+
+  .home-hero-title {
+    font-size: 34px;
+  }
+
+  .home-hero-description {
+    font-size: 16px;
+  }
+
+  .home-hero-panel {
+    padding: 18px;
+  }
+
+  .hero-stat {
+    padding: 14px 14px 13px;
+    border-radius: 18px;
+  }
+
+  .hero-stat-value {
+    font-size: 26px;
+  }
+
   .menu-item a {
     padding: 8px 12px;
   }
@@ -326,5 +576,17 @@ input[type="submit"]:hover {
 
   .post-body {
     font-size: 15px;
+  }
+
+  .post-body h1 {
+    font-size: 28px;
+  }
+
+  .post-body h2 {
+    font-size: 24px;
+  }
+
+  .post-body h3 {
+    font-size: 20px;
   }
 }

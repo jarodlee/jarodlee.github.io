@@ -1,6 +1,38 @@
 {% assign posts = site.posts %}
 {% if site.paginate > 0 %}{% assign posts = paginator.posts %}{% endif %}
 
+<section class="home-hero">
+  <div class="home-hero-copy">
+    <span class="home-hero-kicker">Creative Coding Journal</span>
+    <h1 class="home-hero-title">{{ site.title }}</h1>
+    <p class="home-hero-description">
+      {% if site.description and site.description != '' %}
+        {{ site.description }}
+      {% else %}
+        记录编程、创作、工具与学习实践，把零散经验整理成持续可读的文章。
+      {% endif %}
+    </p>
+    <div class="home-hero-actions">
+      <a class="hero-btn hero-btn-primary" href="{{ '/archives/' | relative_url }}">查看归档</a>
+      <a class="hero-btn hero-btn-secondary" href="{{ '/about/' | relative_url }}">了解更多</a>
+    </div>
+  </div>
+  <div class="home-hero-panel">
+    <div class="hero-stat">
+      <span class="hero-stat-value">{{ site.posts.size }}</span>
+      <span class="hero-stat-label">篇文章</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-value">{{ site.categories.size }}</span>
+      <span class="hero-stat-label">个分类</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-value">{{ site.tags.size }}</span>
+      <span class="hero-stat-label">个标签</span>
+    </div>
+  </div>
+</section>
+
 <section id="posts" class="posts-expand">
   {% for post in posts %}
     {% assign is_index = true %}
